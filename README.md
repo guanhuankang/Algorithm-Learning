@@ -1,4 +1,4 @@
-# Algorithm-Learning (Ongoing-2024-Feb)
+# Algorithm-Learning (Last update: 2024-Mar-06)
 > Key Words: ACM, ICPC, Computer Program, Algorithm
 
 This repo includes the basic and classic computer programming and algorithm.
