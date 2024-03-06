@@ -1,11 +1,10 @@
-Read the annti_book.pdf for learning this part.
-
 ## Time Complexity
-Use O(x) to estimate the complexity of a program. For your information, a program usually can be accepted under or closed to O(n)=1e9 in Codeforce platform. If the program needs to read a large amount of input, we may need to use fast-reading tricks to reduce the IO time.
+> Chapter 2 of antti_book
 
-
+Use O(x) to estimate the complexity of a program.
 
 ## Trick-1
+If the program needs to read a large amount of input, we may need to use fast-reading tricks to reduce the IO time.
 
 [SPOJ.com - Problem INTEST](https://www.spoj.com/problems/INTEST/):
 
