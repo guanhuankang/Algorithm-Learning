@@ -7,11 +7,15 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 ## Outline
 
-1. Time Complexity  
+1. Introduction (see antti book)
 
-2. C++ STL  
+2. [Time Complexity](notes/2_TimeComplexity.md)  
 
-3. Binary Search
+3. [C++ STL](notes/3_C++STL.md)  
+
+4. [Binary Search](notes/4_Binary_Search.md)  
+
+5. [Complete Search](notes/5_complete_search.md)
 
 ## Online Judges Platform
 
