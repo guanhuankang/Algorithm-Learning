@@ -17,6 +17,8 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 5. [Complete Search](notes/5_complete_search.md)
 
+6. [Greedy Algorithm](notes/6_Greedy_Algorithm.md)
+
 ## Online Judges Platform
 
 1. [Codeforce](https://codeforces.com/) is a competitive programming platform that hosts exhilarating contests for programmers around the world. These contests are open to everyone, and consistently attract thousands of participants per round.
