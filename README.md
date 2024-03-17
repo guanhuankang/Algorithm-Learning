@@ -1,4 +1,4 @@
-# Algorithm-Learning (Last update: 2024-Mar-06)
+# Algorithm-Learning
 > Key Words: ACM, ICPC, Computer Program, Algorithm
 
 This repo includes the basic and classic computer programming and algorithm.
@@ -17,7 +17,7 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 5. [Complete Search](notes/5_complete_search.md)
 
-6. [Greedy Algorithm](notes/6_Greedy_Algorithm.md)
+6. [Greedy Algorithm](notes/6_Greedy_Algorithm.md) (Ongoing)
 
 ## Online Judges Platform
 
