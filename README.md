@@ -19,10 +19,10 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 ## Online Judges Platform
 
-1. [Codeforce](https://codeforces.com/) is an interesting contest platform.
+1. [Codeforce](https://codeforces.com/) is a competitive programming platform that hosts exhilarating contests for programmers around the world. These contests are open to everyone, and consistently attract thousands of participants per round.
 
 
-2. [SPOJ](https://www.spoj.com/)
+2. [SPOJ](https://www.spoj.com/) is a vibrant hub where programmers learn, compete, and collaborate, all while solving computational challenges.
 
 
-3. [HDU OJ](https://acm.hdu.edu.cn/) is a famous OJ platform in China.
+3. [HDU OJ](https://acm.hdu.edu.cn/) is a famous OJ platform in China. HDU OJ will host training contests every summer, and thousands of Chinese students actively take part in the training to learn, compete and collaborate. And, most of them will participate in the ACM ICPC contests later in the year.
