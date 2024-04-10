@@ -19,7 +19,9 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 6. [Greedy Algorithm](notes/6_Greedy_Algorithm.md)
 
-7. [Dynamic Programming](notes/7_Dynamic_Programming.md) (Ongoing)
+7. [Dynamic Programming](notes/7_Dynamic_Programming.md)
+
+8. []()
 
 ## Online Judges Platform
 
