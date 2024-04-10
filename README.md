@@ -21,7 +21,9 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 7. [Dynamic Programming](notes/7_Dynamic_Programming.md)
 
-8. []()
+8. [Amortized Analysis](notes/8_Amortized_Analysis.md)
+
+9. [Range Queries](notes/9_Range_Queries.md): Binary Indexed Tree, Segment Tree
 
 ## Online Judges Platform
 

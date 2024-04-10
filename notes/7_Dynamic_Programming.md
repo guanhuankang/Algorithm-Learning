@@ -1,5 +1,7 @@
 ## 7_Dynamic_Programming
 
+![](../__doc__/7_1.jpg)
+
 [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/)
 Solution:
 ```c++
