@@ -23,7 +23,7 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 8. [Amortized Analysis](notes/8_Amortized_Analysis.md)
 
-9. [Range Queries](notes/9_Range_Queries.md): Binary Indexed Tree, Segment Tree
+9. [Range Queries](notes/9_Range_Queries.md): Binary Indexed Tree, Segment Tree (Ongoing)
 
 ## Online Judges Platform
 

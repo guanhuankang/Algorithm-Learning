@@ -24,7 +24,7 @@ Binary indexed tree holds the condition that:
 
 2. Here, `care` can be `sum` operation, or any other operations that satify the aggregation principles.
 
-3. For each query, e.g. $sum_q(a,b)$, we can then use $sum_q(1, b) - sum_q(1,a-1)$, and $sum_q(1, i)$ can be computed as follow:
+3. For each query, e.g. $sum_q(a,b)$, we can then use $sum_q(1, b) - sum_q(1,a-1)$, and $sum_q(1, i)$ can be computed in O(log n) as follow:
 ```c++
 vector<int> care;
 vector<int> nums;
@@ -60,9 +60,12 @@ void init(){
 
 ```
 
+We can find that the `aggregation principles` should satisfy:
+
+1. We can calculate the target (of range `(a,b)`) from another ranges, such as `(1,a-1)` and `(1, b)`.
+
+2. We can modify some elements by updating the care array along the bit path while do not break BIT conditions.
+
 
 ## 4. Segment Tree
-Each operation is O(log n).
-
-Ongoing
-
+Each operation is O(log n). 
