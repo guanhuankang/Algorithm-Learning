@@ -127,3 +127,9 @@ public:
  */
 ```
 note that `LCA` in the comment means `least common ancestor`. `this->tree` is a binary tree. Here, index-1 is the root of the BTree and index-0 is not used. Thus, fa(x)=x//2, left-child(x)=2x, right-child(x)=2x+1. Space complexity is O(n), and time complexity is O(Mlog n), where `M` is the number of queries and `n` is the number of elements in the array.
+
+## 5. Difference Array
+
+Given any array `nums`, we define a difference array, `d[i] = nums[i] - nums[i-1]` and `d[0] = nums[0]`. Thus, $nums[i] = \sum_{j=0}^{j=i} d[j]$. 
+
+For any simple modification (for example, add `v` to all num in the range of `(a,b)`), we can update two points to complete the modification: `d[a] += v` and `d[b+1] -= v`.
