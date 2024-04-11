@@ -7,6 +7,8 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 ## Outline
 
+### Session-I: Basic techiniques
+
 1. Introduction (see antti book)
 
 2. [Time Complexity](notes/2_TimeComplexity.md)  
@@ -25,7 +27,11 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 9. [Range Queries](notes/9_Range_Queries.md): Binary Indexed Tree, Segment Tree
 
-10. [Bit Manipulation](notes/10_Bit_Manipulation.md) Ongoing
+10. [Bit Manipulation](notes/10_Bit_Manipulation.md) 
+
+### Section-II: Graph algorithm
+
+11. [Basics of graphs]() ...
 
 ## Online Judges Platform
 
