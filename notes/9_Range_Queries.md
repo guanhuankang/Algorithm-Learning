@@ -68,4 +68,62 @@ We can find that the `aggregation principles` should satisfy:
 
 
 ## 4. Segment Tree
-Each operation is O(log n). 
+Support modification and query in O(log n).
+[307. Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/)
+Solution:
+```c++
+class NumArray {
+public:
+    int n, N;
+    vector<int> tree;
+
+    NumArray(vector<int>& nums) {
+        this->n = nums.size();
+        this->N = 1;
+        while(this->N < this->n) this->N <<= 1; // calc the N=2^k >= n
+
+        this->tree.clear();
+        for(int i=0;i<this->N;i++){
+            this->tree.push_back(0); // init tree as all zeros
+            this->tree.push_back(0);
+        }
+        for(int i=0;i<this->n;i++){
+            this->update(i, nums[i]);  // update tree according to nums
+        }
+    }
+    
+    void update(int index, int val) {
+        index += this->N;  // 1-base, fa(x) = x>>1; left-child(x) = 2x; right-child(x) = 2x+1
+        val -= this->tree[index];
+        while(index){ // update from the bottom to top, note that index-1 is the root, index-0 is not used.
+            this->tree[index] += val;
+            index >>= 1;
+        }
+    }
+
+    int sumRange(int left, int right) {
+        left += this->N;  // the leaves are nums
+        right += this->N; // thus, we need to add N to get the right position in the BTree.
+
+        int s = left==right?this->tree[left]:0;
+        int left_val = this->tree[left];
+        int right_val = this->tree[right];
+        while(left < right){ // left/right need to care those values in the left-child/right-child of LCA(left, right).
+            s += left_val + right_val; // after this line, s exactly cover those values under left-sub-tree and right-sub-tree
+            left_val = (left&1)==0?this->tree[left+1]:0; // calc the next potential range answer
+            right_val = right&1?this->tree[right-1]:0; // calc the next potential range answer
+            left >>= 1; // move to parent node
+            right >>= 1; // move to parent node
+        } // if left==right, it means they reach the LCA node.
+        return s;
+    }
+};
+
+/**
+ * Your NumArray object will be instantiated and called as such:
+ * NumArray* obj = new NumArray(nums);
+ * obj->update(index,val);
+ * int param_2 = obj->sumRange(left,right);
+ */
+```
+note that `LCA` in the comment means `least common ancestor`. `this->tree` is a binary tree. Here, index-1 is the root of the BTree and index-0 is not used. Thus, fa(x)=x//2, left-child(x)=2x, right-child(x)=2x+1. Space complexity is O(n), and time complexity is O(Mlog n), where `M` is the number of queries and `n` is the number of elements in the array.
