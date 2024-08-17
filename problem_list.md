@@ -74,3 +74,102 @@ public:
     }
 };
 ```
+
+https://leetcode.com/problems/reverse-linked-list/description/
+```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode *prev=nullptr, *cur=head;
+        while (cur!=nullptr) {
+            head = cur->next;
+            cur->next = prev;
+            prev = cur;
+            cur = head;
+        }
+        head = prev;
+        return head;
+    }
+};
+```
+
+https://leetcode.com/problems/kth-largest-element-in-an-array/description/
+```c++
+class Solution {
+public:
+    priority_queue<int> qu;
+    int findKthLargest(vector<int>& nums, int k) {
+        for(int i=0;i<nums.size();i++){
+            if(qu.size() < k) {
+                qu.push(-nums[i]);
+            }else{
+                if (-qu.top() < nums[i]) {
+                    qu.push(-nums[i]);
+                    qu.pop();
+                }
+            }
+        }
+        return -qu.top();
+    }
+};
+```
+
+https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/
+```c++
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        vector<vector<int>> ans;
+        vector<int> cache;
+        int level = -1;
+        int end = 1;
+
+        queue<pair<int,TreeNode*>> qu;
+        if(root!=nullptr) qu.push(make_pair(0, root));
+
+        while(!qu.empty()) {
+            pair<int, TreeNode*> p = qu.front();
+            qu.pop();
+            cout << level << " @ " << p.second->val << endl;
+            if (p.first > level) {
+                if (level & 1) reverse(cache.begin(), cache.end());
+                if (cache.size()>0) ans.push_back(cache);
+                cache.clear();
+                level = p.first;
+            }
+            cache.push_back(p.second->val);
+            if(p.second->left!=nullptr) qu.push(make_pair(level+1, p.second->left));
+            if(p.second->right!=nullptr) qu.push(make_pair(level+1, p.second->right));
+
+            if(qu.empty() && end) {
+                // used to flush the last level
+                qu.push(make_pair(level+1, p.second));
+                end = 0;
+            }
+        }
+
+        return ans;
+    }
+};
+```
