@@ -1,9 +1,10 @@
 ## Algorithm-Learning
 > Key Words: ACM, ICPC, Computer Program, Algorithm
+> Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver in CCSP-2019 final contest. I enjoy the programming moment, and hope that I can update this repo every week -_-.
 
-This repo includes the basic and classic computer programming and algorithm.
+Text Book: (1) [Competitive Programmer’s Handbook (by Antti Laaksonen 2017)](antti_book.pdf), and (2) [算法竞赛入门经典(第二版) (by Liu Rujia)](ACM_purple_lrj_book.pdf)
 
-Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver in CCSP-2019 final contest. I enjoy the programming moment, and hope that I can update this repo every week -_-.
+This repo includes the basic and classic computer programming and algorithm. I am trying to include a problem set to help prepare coding&interviews.
 
 ## Online Judges Platform
 
@@ -16,6 +17,8 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 3. [HDU OJ](https://acm.hdu.edu.cn/) is a famous OJ platform in China. HDU OJ will host training contests every summer, and thousands of Chinese students actively take part in the training to learn, compete and collaborate. And, most of them will participate in the ACM ICPC contests later in the year.
 
 4. [Leetcode](https://leetcode.com/problems)
+
+5. [vjudge](https://vjudge.net/article/524) A very good problem set for ACMer training program.
 
 ## Outline
 
@@ -45,3 +48,5 @@ Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver i
 
 11. [Basics of graphs]() ...
 
+### Section-III Problem Set
+[TODO](#)
