@@ -4,7 +4,7 @@
 
 Text Book: (1) [Competitive Programmer’s Handbook (by Antti Laaksonen 2017)](antti_book.pdf), and (2) [算法竞赛入门经典(第二版) (by Liu Rujia)](ACM_purple_lrj_book.pdf)
 
-This repo includes the basic and classic computer programming and algorithm. I am trying to include a problem set to help prepare coding&interviews.
+This repo includes the basic and classic computer programming and algorithm. I am trying to include classic problem set to help prepare coding&interviews.
 
 ## Online Judges Platform
 
@@ -48,5 +48,5 @@ This repo includes the basic and classic computer programming and algorithm. I a
 
 11. [Basics of graphs]() ...
 
-### Section-III Problem Set
+### Section-III Classic Problem Set
 [TODO](#)
