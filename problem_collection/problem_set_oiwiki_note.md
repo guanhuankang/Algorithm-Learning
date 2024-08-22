@@ -1,3 +1,1 @@
-# 树的中心 (tree-centroid)
-https://oi-wiki.org/graph/tree-centroid
-
+`树的中心`, `tree-centroid`, https://oi-wiki.org/graph/tree-centroid, https://codeforces.com/problemset/problem/685/B
