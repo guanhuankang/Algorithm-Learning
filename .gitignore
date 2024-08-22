@@ -1,2 +1,5 @@
 *.exe
 test.cpp
+
+~*.xlsx
+code_space/

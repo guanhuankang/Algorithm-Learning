@@ -6,8 +6,6 @@ Use O(x) to estimate the complexity of a program.
 ## Trick-1
 If the program needs to read a large amount of input, we may need to use fast-reading tricks to reduce the IO time.
 
-[SPOJ.com - Problem INTEST](https://www.spoj.com/problems/INTEST/):
-
 ```c++
 // SPOJ https://www.spoj.com/problems/INTEST/
 #include <bits/stdc++.h>

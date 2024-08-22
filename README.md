@@ -1,12 +1,14 @@
 ## Algorithm-Learning
 > Key Words: ACM, ICPC, Computer Program, Algorithm
-> Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver in CCSP-2019 final contest. I enjoy the programming moment, and hope that I can update this repo every week -_-.
+<!-- > Motivation: I obtained a Silver in a 2018 Asian regional contest, and a Silver in CCSP-2019 final contest. I enjoy the programming moment, and hope that I can update this repo every week -_-. -->
 
-Text Book: [Competitive Programmer’s Handbook (by Antti Laaksonen 2017)](antti_book.pdf)
 
-Recommend a very awesome website [OI Wiki](https://oi-wiki.org/).
+This repo includes the basic and classic computer programming and algorithm.
 
-This repo includes the basic and classic computer programming and algorithm. I am trying to include classic problem set to help prepare coding&interviews.
+Text Book: [Competitive Programmer’s Handbook (by Antti Laaksonen 2017)](textbook/antti_book.pdf)
+
+Recommend an awesome website [OI Wiki](https://oi-wiki.org/), and a great ACM textbook [算法竞赛入门经典(第二版) (by Liu Rujia)](textbook/ACM_purple_lrj_book.pdf).
+
 
 ## Online Judges Platform
 
@@ -51,6 +53,6 @@ This repo includes the basic and classic computer programming and algorithm. I a
 11. [Basics of graphs]() ...
 
 ### Appendix Classic Problem Set
-> Book: [算法竞赛入门经典(第二版) (by Liu Rujia)](ACM_purple_lrj_book.pdf)
+> [OI WiKi](https://oi-wiki.org/)
 
 [TODO](#)
