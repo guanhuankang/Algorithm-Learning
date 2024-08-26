@@ -1,1 +1,2 @@
 `树的中心`, `tree-centroid`, https://oi-wiki.org/graph/tree-centroid, https://codeforces.com/problemset/problem/685/B
+`最小生成树`, `MST`, https://oi-wiki.org/graph/mst/, https://www.luogu.com.cn/problem/P2504
