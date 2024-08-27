@@ -134,3 +134,72 @@ int main() {
 }
 
 ```
+
+`最小生成树`, `MST`, https://oi-wiki.org/graph/mst/, https://loj.ac/p/2149
+```c++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct Edge {
+    int u, v, c;
+    Edge(int x, int y, int z) : u(x), v(y), c(z) {};
+    bool operator< (const Edge x) const {
+        return this->c < x.c;
+    };
+};
+
+int m, n;
+int fa[500];
+vector<Edge> edges;
+
+int findfa(int x) {
+    if (fa[x] == x)
+        return x;
+
+    fa[x] = findfa(fa[x]);
+    return fa[x];
+}
+
+inline bool together(int u, int v) {
+    return findfa(u) == findfa(v);
+}
+
+inline void link(int u, int v) {
+    fa[findfa(u)] = findfa(v);
+}
+
+int main() {
+    // freopen("in.txt", "r", stdin);
+
+    ios::sync_with_stdio(0);
+
+    cin >> n >> m;
+
+    for (int i = 0; i < m; i++) {
+        int u, v, c;
+        cin >> u >> v >> c;
+        edges.push_back(Edge(u, v, c));
+    }
+
+    sort(edges.begin(), edges.end());
+
+    int ans = -1e9 + 1;
+
+    for (int i = 0; i <= 350; i++) {
+        fa[i] = i;
+    }
+
+    for (int i = 0; i < m; i++) {
+        if (!together(edges[i].u, edges[i].v)) {
+            link(edges[i].u, edges[i].v);
+            ans = max(ans, edges[i].c);
+        }
+    }
+
+    cout << n - 1 << " " << ans << endl;
+
+    return 0;
+}
+```
