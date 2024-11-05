@@ -66,6 +66,7 @@ We can find that the `aggregation principles` should satisfy:
 
 2. We can modify some elements by updating the care array along the bit path while do not break BIT conditions.
 
+[P3374 【模板】树状数组 1](https://www.luogu.com.cn/problem/P3374)
 
 ## 4. Segment Tree
 Support modification and query in O(log n).
