@@ -56,3 +56,11 @@ Recommend an awesome website [OI Wiki](https://oi-wiki.org/), and a great ACM te
 `树的中心`, `tree-centroid`, [tutorial](https://oi-wiki.org/graph/tree-centroid), [CF685B](https://codeforces.com/problemset/problem/685/B)
 
 `最小生成树`, `MST`, [tutorial](https://oi-wiki.org/graph/mst/), [P2504](https://www.luogu.com.cn/problem/P2504), [LOJ2149](https://loj.ac/p/2149), [P2212](https://www.luogu.com.cn/problem/P2212)
+
+`单点源最短路`, `ShortestPath`, `Dijkstra`, [P4779](https://www.luogu.com.cn/problem/P4779), `SPFA`, `Floyd`, 
+
+`并查集`,  `UnionSet`, [P3101](https://www.luogu.com.cn/problem/P3101), 
+
+`最小路径覆盖问题`
+
+`二分匹配问题`
