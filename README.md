@@ -52,7 +52,8 @@ Recommend an awesome website [OI Wiki](https://oi-wiki.org/), and a great ACM te
 
 11. [Basics of graphs]() ...
 
-### Appendix Classic Problem Set
-> [OI WiKi](https://oi-wiki.org/)
+## Other
 
-[TODO](#)
+Problem Set:
+1. `树的中心`, `tree-centroid`, [tutorial](https://oi-wiki.org/graph/tree-centroid), [CF685B](https://codeforces.com/problemset/problem/685/B)
+2. `最小生成树`, `MST`, [tutorial](https://oi-wiki.org/graph/mst/), [P2504](https://www.luogu.com.cn/problem/P2504), [LOJ2149](https://loj.ac/p/2149)
